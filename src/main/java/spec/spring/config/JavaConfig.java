@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import spec.spring.bean.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Configuration
@@ -14,10 +15,10 @@ public class JavaConfig {
     public Computer computer() {
         Computer computer = new Computer();
         computer.setCpu(intelCpu());
-        computer.setRamList(List.of(sonyRam(), kingstonRam(), sonyRam()));
+        computer.setRamList(Arrays.asList(sonyRam(), kingstonRam(), sonyRam()));
 
         computer.setScreen(asusScreen());
-        computer.setStorageList(List.of(dexpStorage(),hpStorage()));
+        computer.setStorageList(Arrays.asList(dexpStorage(),hpStorage()));
         return computer;
     }
 

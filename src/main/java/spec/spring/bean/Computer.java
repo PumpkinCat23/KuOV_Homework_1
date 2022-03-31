@@ -26,7 +26,7 @@ public class Computer {
     public Computer (@Qualifier("myCpu") CPU cpu,
                      @Qualifier("ramList") List<RAM> ramList,
                      @Qualifier("storageList") List<Storage> storageList,
-                     @Qualifier("screen") Screen screen) {
+                     @Qualifier("myScreen") Screen screen) {
         this.cpu = cpu;
         this.ramList = ramList;
         this.screen = screen;

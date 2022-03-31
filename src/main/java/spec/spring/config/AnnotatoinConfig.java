@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 import spec.spring.bean.*;
 
+import java.util.Arrays;
 import java.util.List;
 
 @Configuration
@@ -14,7 +15,7 @@ public class AnnotatoinConfig {
     //методы для RAM - List
     @Bean
     public List<RAM> ramList () {
-        return List.of(kingstonRam(), sonyRam(), kingstonRam());
+        return Arrays.asList(kingstonRam(), sonyRam(), kingstonRam());
     }
 
     @Bean
@@ -32,7 +33,7 @@ public class AnnotatoinConfig {
     //методы для STORAGE - List
     @Bean
     public List<Storage> storageList () {
-        return List.of(dexpStorage(), hpStorage());
+        return Arrays.asList(dexpStorage(), hpStorage());
     }
 
     @Bean
